@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=jekyl, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ site.url }}/styles.css">
     <title>{{page.title}}</title>
 </head>
 <body>
@@ -14,8 +14,12 @@
                 <h2 class="heading-font">{{page.title}}</h2>
                 <p class="heading-font">1661 W Lancaster Blvd. | Sundays @ 8:30 & 10:30 am</p>
                 <div class="flex horizontal">
+                    {% if page.link1 != empty %}
                     <a href="http://"><div class="heading-font button light">NEW HERE?</div></a>
+                    {% endif %}
+                    {% if page.link2 != empty %}
                     <a href="http://"><div class="heading-font button light">LIVESTREAM</div></a>
+                    {% endif %}
                 </div>
                 
             </section>
