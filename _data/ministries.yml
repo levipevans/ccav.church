@@ -1,0 +1,17 @@
+---
+- name: mens
+  sections:
+    - heading: When We Meet
+      paragraphs:
+        - p1: The M.B.S.F. meets on Thursday at 6:30 p.m. Download the schedule & materials here.
+      imgpath: /assets/images/youtube_social_squircle_red.png
+    - heading: Our Vision
+      paragraphs:
+        - p1: The Men’s Bible Study Fellowship (M.B.S.F.) is a study designed to give men in the fellowship the opportunity to come together, to encourage, and to challenge one another in Christ. Our desire is to see men become committed servants, leaders, husbands, and fathers in a way that glorifies the Lord Jesus Christ.
+        - p2: The format of the evening is to have time for fellowship, worship, teaching, and group discussion time. The M.B.S.F. is held annually and begins in Fall and continues through Spring of the following year, with a break during the summer months. 
+      imgpath: /assets/images/youtube_social_squircle_red.png
+  leaders:
+    - name: Elder Robert Smith
+      imgpath: /assets/images/youtube_social_squircle_red.png
+    - name: Elder Lee Jimenez
+      imgpath: /assets/images/youtube_social_squircle_red.png
