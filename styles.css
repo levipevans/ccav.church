@@ -240,3 +240,14 @@ header, footer{
 .button.light{
     background-color: var(--accent);
 }
+.alert-box{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent);
+}
+.alert-box button{
+    background: none;
+}
