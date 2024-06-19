@@ -1,0 +1,21 @@
+---
+- name: About
+  link: /about.html
+  submenu: 
+    - name: FAQ
+      link: /about/FAQ.html
+- name: Ministries
+  link: /ministries.html
+  submenu:
+    - name: Mens
+      link:
+    - name: Womens
+      link:
+    - name: Childrens
+      link:
+    - name: Seniors
+      link:
+    - name: Young Adults
+      link:
+- name: Resources
+  link: /resources.html
