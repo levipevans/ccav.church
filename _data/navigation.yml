@@ -1,11 +1,11 @@
 ---
 - name: About
-  link: /about.html
+  link: /about/
   submenu: 
     - name: FAQ
       link: /about/FAQ.html
 - name: Ministries
-  link: /ministries.html
+  link: /ministries/
   submenu:
     - name: Mens
       link:
