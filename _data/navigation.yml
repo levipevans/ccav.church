@@ -3,7 +3,12 @@
   link: /about/
   submenu: 
     - name: FAQ
-      link: /about/FAQ.html
+      link: /about/FAQ/
+    - name: Staff
+      link: "/about/staff/"
+    - name: Elders
+      link: "/about/elders/"
+
 - name: Ministries
   link: /ministries/
   submenu:
