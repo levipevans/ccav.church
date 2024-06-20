@@ -1,5 +1,6 @@
 ---
 name: Levi Evans
+position: "*"
 roles:
   - Staff
   - Young Adults Teacher

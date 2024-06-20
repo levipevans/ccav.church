@@ -1,5 +1,6 @@
 ---
-name: Levi Evans
+name: Christine Rutherford
+position: Accountant
 roles:
   - Staff
   - Young Adults Teacher
