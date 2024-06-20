@@ -20,6 +20,8 @@
 
 title: Calvary Chapel Antelope Valley
 email: ccav@calvarychapelav.org
+address: 1661 Lancaster BLVD
+phone: (661) 942-0404
 description: >- # this means to ignore newlines until "baseurl:"
   Calvary Chapel Antelope Valley is a Christ-centered community, 
   rooted in Scripture, dedicated to knowing Jesus, fostering fellowship,
@@ -32,6 +34,7 @@ collections:
   teachings:
   ministries:
   events:
+  resources:
 
 
 # Build settings
