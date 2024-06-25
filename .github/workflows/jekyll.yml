@@ -44,3 +44,4 @@ jobs:
           publish_dir: "./_site"
           cname: ccav.church
           enable_jekyll: true
+          publish_branch: gh-pages
