@@ -1,4 +1,4 @@
-name: Deploy Jekyll site to GitHub Pages
+name: Build and Deploy Jekyll site to GitHub Pages
 
 on:
   push:
@@ -9,9 +9,9 @@ permissions:
   contents: write
   pages: write
   id-token: write
-  
+
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -37,4 +37,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
           cname: ccav.church
-          enable_jekyll: true
