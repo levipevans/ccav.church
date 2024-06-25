@@ -1,31 +1,31 @@
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll site to Pages
+name: Deploy Jekyll site to GitHub Pages
 
 on:
   push:
     branches:
-      - main
-  workflow_dispatch:
-
-permissions:
-  contents: write
-  pages: write
-  id-token: write
+      - main  # or the branch you use
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout source code
-        uses: actions/checkout@v4
-      - name: Setup Ruby
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1
+          ruby-version: 3.0.7
+
       - name: Install dependencies
-        run: bundle install
-      - name: Build site with Jekyll
+        run: |
+          gem install bundler
+          bundle install
+
+      - name: Build site
         run: bundle exec jekyll build
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
