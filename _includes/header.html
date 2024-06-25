@@ -1,0 +1,19 @@
+<header class="drop-shadow">
+    <h1 class="heading-font">CCAV</h1>
+    <nav>
+        <ul class="mainmenu">
+            {% for item in site.data.navigation %}
+                <li>
+                    <a href="{{ item.link }}">{{item.name}}</a>
+                    {% if item.submenu and item.submenu.size > 0 %}
+                        <ul class="submenu">
+                            {% for subitem in item.submenu %}
+                            <li><a href="{{ subitem.link }}">{{ subitem.name }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>
