@@ -3,5 +3,5 @@
 source "https://rubygems.org"
 
 # gem "rails"
-gem "jekyll"
+gem "jekyll", "4.3.3"
 gem "jekyll-feed", "~> 0.12"
