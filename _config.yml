@@ -28,6 +28,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   and serving others with love.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.ccav.church" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /:path/
 collections_dir: collections
 collections: 
   people:
