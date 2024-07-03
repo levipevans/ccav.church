@@ -1,29 +1,12 @@
 <footer class="drop-shadow">
-    <ul class="footer-menu">
-        <li>
-            <h3 class="heading-font">About Us</h3>
-            <ul class="footer-submenu">
-                <li><a href="http://">About</a></li>
-                <li><a href="http://">Mens</a></li>
-                <li><a href="http://">Womens</a></li>
-                <li><a href="http://">Childrens</a></li>
-                <li><a href="http://">Young Adults</a></li>
-            </ul>
-        </li>
-        <li>
-            <h3 class="heading-font">Get Involved</h3>
-            <ul class="footer-submenu">
-                <li><a href="http://">About</a></li>
-                <li><a href="http://">Mens</a></li>
-                <li><a href="http://">Womens</a></li>
-                <li><a href="http://">Childrens</a></li>
-                <li><a href="http://">Young Adults</a></li>
-            </ul>
-        </li>
-    </ul>
+    <p></p>
+    <p></p>
+    <p class="footer-title"> {{ site.title }} </p>
     <ul class="social-media-menu">
         {% for item in site.data.social %}
         <li><a href="{{ item.link }}"><img src="{{ item.imgpath }}" alt="{{ item.name }}" width="40px" height="40px"></a></li>
         {% endfor %}
     </ul>
+    <p></p>
+    <p></p>
 </footer>
