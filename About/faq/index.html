@@ -1,0 +1,9 @@
+---
+layout: default
+title: FAQ
+permalink: /FAQ/
+---
+{% for question in site.data.FAQ %}
+<h3> {{ question.question }} </h3>
+<p> {{ question.answer }} </p>
+{% endfor %}

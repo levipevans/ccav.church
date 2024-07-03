@@ -3,11 +3,11 @@
   link: /about/
   submenu: 
     - name: FAQ
-      link: /about/FAQ/
+      link: /FAQ/
     - name: Staff
       link: "/staff/"
     - name: Elders
-      link: "/about/elders/"
+      link: "/elders/"
 
 - name: Ministries
   link: /ministries/
