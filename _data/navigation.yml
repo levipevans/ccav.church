@@ -13,14 +13,14 @@
   link: /ministries/
   submenu:
     - name: Mens
-      link:
+      link: /ministries/mens/
     - name: Womens
-      link:
+      link: /ministries/womens/
     - name: Childrens
-      link:
+      link: /ministries/childrens/
     - name: Seniors
-      link:
+      link: /ministries/seniors/
     - name: Young Adults
-      link:
+      link: /ministries/ya/
 - name: Resources
   link: /resources.html

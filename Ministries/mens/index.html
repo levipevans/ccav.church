@@ -1,7 +1,8 @@
 ---
-title: Ministries
+title: Men's Study
 identity: mens
 layout: default
+permalink: /Ministries/mens
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -12,19 +13,7 @@ layout: default
 </head>
 <body>
     <main>
-        {% for item in site.data.ministries %}
-            {% if item.identity == page.identity %}
-                <h1>{{item.name}}</h1>
-                {% for section in item.sections %}
-                    <article>
-                        <h2>{{ section.heading }}</h2>
-                        {% for paragraph in section.paragraphs %}
-                            <p>{{ paragraph }}</p>
-                        {% endfor %}
-                    </article>
-                {% endfor %}
-            {% endif %}
-        {% endfor %}
+        
     </main>
 </body>
 </html>
