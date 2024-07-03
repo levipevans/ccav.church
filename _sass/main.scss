@@ -65,6 +65,7 @@ ul{
     align-items: center;
     gap: 10px;
     list-style: none;
+    text-wrap: nowrap;
 }
 .mainmenu li {
     display: inline;
@@ -74,6 +75,7 @@ ul{
     border-top-right-radius: 10px;
     */
     border-radius: 0px;
+    width: 95%;
 }
 
 .mainmenu li:hover .submenu{
@@ -82,7 +84,9 @@ ul{
 .mainmenu li:hover{
     background-color: var(--accent);
 }
-
+.mainmenu li:has(.submenu){
+    transform: translate(0px,-3px);
+}
 .submenu {
     display: flex;
     align-items: center;
