@@ -1,13 +1,13 @@
 ---
 title: "Men’s Bible Study Fellowship"
-identity: "mens"
 leaders:
   - name: "Robert Smith"
   - name: "Lee Jimenez"
+layout: default
 ---
 
 ### When We Meet
-![Mens Study](assets/images/Facebook_Logo_Primary.png)
+![Mens Study](/assets/images/Facebook_Logo_Primary.webp)
 The M.B.S.F. meets on Thursday at 6:30 p.m. Download the schedule & materials here.
 
 ### Our Vision
