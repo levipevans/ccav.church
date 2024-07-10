@@ -32,10 +32,14 @@ permalink: /lol/:path/:basename/
 collections_dir: collections
 collections: 
   people:
+    output: true
   teachings:
+    output: true
   ministries:
+    output: true
   events:
   resources:
+    output: true
 
 
 # Build settings
