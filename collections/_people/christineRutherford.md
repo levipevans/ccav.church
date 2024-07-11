@@ -2,8 +2,10 @@
 name: Christine Rutherford
 position: Accountant
 roles:
-  - Elder
-  - Young Adults Teacher
-  - Youth Teacher
+  - Staff
+  - Worship Team
 profile-imgpath: /assets/images/youtube_social_squircle_red.png
+layout: default_people
 ---
+
+## lets give this a test
