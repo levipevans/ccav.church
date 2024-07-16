@@ -1,28 +1,7 @@
 ---
-- name: About
-  link: /about/
-  submenu: 
-    - name: FAQ
-      link: /FAQ/
-    - name: Staff
-      link: "/staff/"
-    - name: Elders
-      link: "/elders/"
-
-- name: Ministries
-  link: /ministries/
-  submenu:
-    - name: Mens
-      link: /ministries/mens/
-    - name: Womens
-      link: /ministries/womens/
-    - name: Childrens
-      link: /ministries/childrens/
-    - name: Seniors
-      link: /ministries/seniors/
-    - name: Young Adults
-      link: /ministries/ya/
-- name: Teachings
-  link: /teachings/
+- name: Home
+  link: /
 - name: Resources
   link: /resources/
+- name: Live Stream ⇗
+  link: https://www.youtube.com/@CalvaryChapelAntelopeVal-cw6qu
