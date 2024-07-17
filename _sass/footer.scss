@@ -1,0 +1,47 @@
+footer{
+    display: grid;
+    grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6% ;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5px;
+    padding: 20px;
+}
+
+footer h3{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-menu li{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.footer-submenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-title{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+footer .social-media-menu {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}

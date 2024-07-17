@@ -1,0 +1,98 @@
+/* Articles --> No longer being used? */
+.article-header{
+    margin: 0;
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--white);
+    font-variant: small-caps;
+}
+.article-header *{
+    margin: .7em;
+}
+
+/* Full Width Banners */
+.banner{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.banner .banner-text-container{
+    background: radial-gradient(ellipse 45% 30% at center, #00000022, #00000000);
+    padding: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.preview-card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 50px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.preview-card{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.cta-button{
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--secondary);
+    color: var(--white);
+    width:fit-content;
+}
+
+.cta-button:hover{
+    background: var(--background-elements);
+}
+
+.button{
+    padding: 5px;
+    margin:0px;
+    border-radius: 3px;
+}
+.button.light{
+    background-color: var(--accent);
+}
+
+/* Alert-Box for test site */
+.alert-box{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent);
+}
+.alert-box button{
+    background: none;
+}
