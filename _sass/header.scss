@@ -80,3 +80,13 @@ header ul li:hover .submenu {
     opacity: 1;
     transform: translate(-10px, 5px);
 }
+
+@media(min-width:1250px){
+
+}
+
+@media(max-width:1249px){
+    nav .mainmenu{
+        width: 20%;
+    }
+}
