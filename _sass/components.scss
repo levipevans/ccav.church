@@ -13,7 +13,6 @@
 .article-header *{
     margin: .7em;
 }
-
 /* Full Width Banners */
 .banner{
     text-align: center;
@@ -44,12 +43,7 @@
 
 .preview-card-container{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    padding: 100px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    gap: 50px;
     flex-grow: 1;
     flex-shrink: 1;
 }
@@ -61,8 +55,25 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 10px;
+} 
+@media(min-width:1250px) {
+      .preview-card-container{
+        flex-direction: row;
+        padding: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        gap: 50px;
+      }
 }
-
+@media(max-width:1249px){
+    .preview-card-container{
+        flex-direction: column;
+        padding: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        gap: 50px;
+      }
+}
 .cta-button{
     text-decoration: none;
     padding: 10px;
@@ -92,6 +103,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--accent);
+    z-index: 1000;
 }
 .alert-box button{
     background: none;
