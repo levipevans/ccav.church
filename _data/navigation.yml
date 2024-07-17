@@ -1,6 +1,17 @@
 ---
 - name: Home
   link: /
+- name: About
+  link: /about/
+  submenu:
+    - name: test
+      link: test1
+    - name: test1
+      link: test2
+    - name: test11
+      link: test31
+    - name: test4
+      link: test1111
 - name: Resources
   link: /resources/
 - name: Live Stream ⇗
