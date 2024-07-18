@@ -1,5 +1,5 @@
 /* Articles --> No longer being used? */
-.article-header{
+.article-header {
     margin: 0;
     flex-grow: 1;
     width: 100%;
@@ -10,26 +10,29 @@
     color: var(--white);
     font-variant: small-caps;
 }
-.article-header *{
+
+.article-header * {
     margin: .7em;
 }
+
 /* Full Width Banners */
-.banner{
+.banner {
     text-align: center;
     position: relative;
     width: 100%;
-    height: 300px; /* Adjust the height as needed */
+    height: 300px;
+    /* Adjust the height as needed */
     overflow: hidden;
 }
 
-.banner img{
+.banner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 50% 30%;
 }
 
-.banner .banner-text-container{
+.banner .banner-text-container {
     background: radial-gradient(ellipse 45% 30% at center, #00000022, #00000000);
     padding: 100px;
     padding-left: 200px;
@@ -41,45 +44,58 @@
     color: white;
 }
 
-.preview-card-container{
+.preview-card-container {
     display: flex;
     justify-content: space-around;
     flex-grow: 1;
     flex-shrink: 1;
 }
 
-.preview-card{
+.preview-card {
     position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 10px;
-} 
+    justify-content: space-between;
+    background-color: var(--white);
+}
 
-.cta-button{
+.preview-card li {
+    margin: 5px;
+}
+
+.preview-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.cta-button {
+    align-self: flex-end;
     text-decoration: none;
     padding: 10px;
     background-color: var(--secondary);
     color: var(--white);
-    width:fit-content;
+    width: fit-content;
 }
 
-.cta-button:hover{
+.cta-button:hover {
     background: var(--background-elements);
 }
 
-.button{
+.button {
     padding: 5px;
-    margin:0px;
+    margin: 0px;
     border-radius: 3px;
 }
-.button.light{
+
+.button.light {
     background-color: var(--accent);
 }
 
 /* Alert-Box for test site */
-.alert-box{
+.alert-box {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -87,31 +103,45 @@
     background-color: var(--accent);
     z-index: 1000;
 }
-.alert-box button{
+
+.alert-box button {
     background: none;
 }
+
 @media(min-width:1250px) {
-      .preview-card-container{
+    .preview-card-container {
+        align-items: stretch;
         flex-direction: row;
         padding: 100px;
         padding-top: 20px;
         padding-bottom: 20px;
         gap: 50px;
-      }
-      .alert-box{
+    }
+
+    .preview-card {
+        padding: 20px;
+    }
+
+    .alert-box {
         position: absolute;
-      }
+    }
 }
-@media(max-width:1249px){
-    .preview-card-container{
+
+@media(max-width:1249px) {
+    .preview-card-container {
+        align-items: center;
         flex-direction: column;
-        padding: 30px;
+        padding: 25px;
         padding-top: 20px;
         padding-bottom: 20px;
         gap: 50px;
-      }
-      .alert-box{
-        position: relative;
-      }
-}
+    }
 
+    .preview-card {
+        padding: 15px;
+    }
+
+    .alert-box {
+        position: relative;
+    }
+}
