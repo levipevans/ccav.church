@@ -1,14 +1,18 @@
 <header class="drop-shadow">
-    <h1 class="heading-font"><a href="{{ site.url }}">CCAV</a></h1>
     <nav>
-        <ul class="mainmenu">
+        <h1 class="heading-font title special-link"><a href="{{ site.url }}">CCAV</a></h1>
+        <span class="material-symbols-outlined"><a href="javascript:void(0)" class="menu-button" onclick="toggleMenu()">menu</a></span>
+    </nav>
+    <nav class="mainmenu">
+        <ul class="" id="main-menu" style="display: none;">
             {% for item in site.data.navigation %}
                 <li>
-                    <a href="{{ item.link }}">{{item.name}}</a>
+                    <a href="{{ item.link }}" class="cta-button">{{item.name}}
+                        {% if item.submenu and item.submenu.size > 0 %}
+                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                        {%endif%}
+                    </a>
                     {% if item.submenu and item.submenu.size > 0 %}
-                    <span class="material-symbols-outlined">
-                        arrow_drop_down
-                    </span>
                         <ul class="submenu">
                             {% for subitem in item.submenu %}
                             <li><a href="{{ subitem.link }}">{{ subitem.name }}</a></li>
