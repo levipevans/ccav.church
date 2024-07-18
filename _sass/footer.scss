@@ -1,15 +1,25 @@
 footer{
-    display: grid;
-    grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6% ;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
     gap: 5px;
     padding: 20px;
 }
 
+footer nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 footer h3{
     display: inline;
     margin: 0;
+    padding: 0;
+}
+
+footer ul{
+    margin:0;
     padding: 0;
 }
 
@@ -45,3 +55,4 @@ footer .social-media-menu {
     justify-content: center;
     gap: 20px;
 }
+
