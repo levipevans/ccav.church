@@ -3,8 +3,8 @@
         <h1 class="heading-font title special-link"><a href="{{ site.url }}">CCAV</a></h1>
         <span class="material-symbols-outlined"><a href="javascript:void(0)" class="menu-button" onclick="toggleMenu()">menu</a></span>
     </nav>
-    <nav class="mainmenu">
-        <ul class="" id="main-menu" style="display: none;">
+    <nav class="main-menu-container">
+        <ul class="" id="main-menu">
             {% for item in site.data.navigation %}
                 <li>
                     <a href="{{ item.link }}" class="cta-button">{{item.name}}
