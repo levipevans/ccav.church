@@ -1,8 +1,12 @@
 function toggleMenu() {
     var menu = document.getElementById("main-menu");
-    if (menu.style.display == "flex") {
-      menu.style.display = "none";
+    if (menu.classList.contains("menu-visible")) {
+      menu.classList.remove("menu-visible")
+      menu.classList.add("menu-hidden")
+    } else if( menu.classList.contains("menu-hidden")) {
+      menu.classList.remove("menu-hidden")
+      menu.classList.add("menu-visible")
     } else {
-      menu.style.display = "flex";
+      menu.classList.add("menu-visible")
     }
   }
