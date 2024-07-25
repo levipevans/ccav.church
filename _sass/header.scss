@@ -13,6 +13,10 @@ header nav {
     align-items: center;
 }
 
+header h1 a{
+    text-decoration: none !important;
+}
+
 header ul {
     margin: 0;
     padding: 0;
@@ -51,13 +55,7 @@ header .main-menu-container li:has(.submenu) {
     align-items: center;
 }
 
-.menu-visible {
-    display: flex !important;
-  }
-  
-.menu-hidden {
-    display: none !important;
-  }
+
 
 
 @media(min-width:1250px){
@@ -87,6 +85,14 @@ header .main-menu-container li:has(.submenu) {
         transition: max-height .3s ease-in-out, opacity .2s ease-in-out, transform .2s ease-in-out;
     }
     
+    header h1 a {
+        text-align: center;
+        width: 100%;
+        min-width: 70px;
+        font-weight: 500;
+        color: var(--primary);
+    }
+
     header .submenu li a {
         padding: 10px 20px;
         margin: 5px;
@@ -135,4 +141,11 @@ header .main-menu-container li:has(.submenu) {
     .main-menu-container .submenu a:hover{
         background-color: var(--white);
     }
+    .menu-visible {
+        display: flex !important;
+      }
+      
+    .menu-hidden {
+        display: none !important;
+      }
 }
