@@ -1,4 +1,4 @@
-footer{
+footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -6,43 +6,44 @@ footer{
     padding: 20px;
 }
 
-footer nav{
+footer nav {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-footer h3{
+footer h3 {
     display: inline;
     margin: 0;
     padding: 0;
 }
 
-footer ul{
-    margin:0;
+footer ul {
+    margin: 0;
     padding: 0;
 }
 
-.footer-menu{
+.footer-menu {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
-.footer-menu li{
+
+.footer-menu li {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
 }
 
-.footer-submenu{
+.footer-submenu {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.footer-title{
+.footer-title {
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
@@ -55,4 +56,3 @@ footer .social-media-menu {
     justify-content: center;
     gap: 20px;
 }
-

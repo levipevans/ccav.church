@@ -26,8 +26,8 @@ a:not(.cta-button):not(.special-link) {
     text-decoration: none;
     color: var(--secondary);
 }
+
 a:not(.cta-button):not(.special-link):hover {
     text-decoration: underline;
     color: var(--background-elements);
 }
-    // add normal link underline
