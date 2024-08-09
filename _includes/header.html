@@ -18,7 +18,8 @@
                     {% if item.submenu and item.submenu.size > 0 %}
                     <ul class="submenu">
                         {% for subitem in item.submenu %}
-                        <li><a href="{{ subitem.link }}">{{ subitem.name }}</a></li>
+                        <li><a href="{{ subitem.link }}"><span class="submenu-item-text">{{ subitem.name }}</span></a>
+                        </li>
                         {% endfor %}
                     </ul>
                     {% endif %}
