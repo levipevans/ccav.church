@@ -4,13 +4,13 @@
 - name: About
   link: /about/
   submenu:
-    - name: test
+    - name: Test
       link: test1
-    - name: test1
+    - name: Test1
       link: test2
-    - name: test11
+    - name: Test11
       link: test31
-    - name: test4
+    - name: Test4
       link: test1111
 - name: Resources
   link: /resources/

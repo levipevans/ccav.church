@@ -4,7 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
 
 .material-symbols-outlined {
-    display: inline;
-    transform: translate(0px, 0px);
+    display: inline-block;
+    transform: translate(0px, 5px);
     font-size: larger;
+}
+
+h2.heading-font {
+    font-size: 3rem;
+}
+
+.menu-button {
+    font-size: 3rem;
 }

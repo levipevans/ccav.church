@@ -100,7 +100,7 @@
     font-weight: 600;
     width: fit-content;
     border-radius: 10px;
-    transition: padding 0.1s;
+    transition: padding 0.4s cubic-bezier(.59, -1.28, .43, 1.77), box-shadow 0.4s cubic-bezier(.59, -1.28, .43, 1.77);
 }
 
 .cta-button:hover {
