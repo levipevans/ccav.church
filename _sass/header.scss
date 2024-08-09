@@ -163,8 +163,9 @@ header .main-menu-container {
     }
 
     #main-menu a {
-        display: block;
+        display: flex;
         width: 100%;
+        min-height: 7vh;
         background-color: #1b1b1b;
         border-block: 1px solid var(--white-transparent);
     }
@@ -172,5 +173,13 @@ header .main-menu-container {
     .submenu-item-text {
         display: inline-block;
         transform: translate(10%, 0px);
+    }
+
+    .menu-visible {
+        display: flex !important;
+    }
+
+    .menu-hidden {
+        display: none !important;
     }
 }
