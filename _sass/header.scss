@@ -7,6 +7,10 @@ header {
     z-index: 10;
 }
 
+.mobile-menu * {
+    color: var(--white);
+}
+
 .header-content {
     width: 100%;
     display: flex;
@@ -22,9 +26,7 @@ header {
     font-size: 4rem;
 }
 
-header * {
-    color: var(--white) !important;
-}
+
 
 
 header nav {
@@ -33,7 +35,7 @@ header nav {
     align-items: center;
 }
 
-header h1 a {
+header a {
     text-decoration: none !important;
 }
 
@@ -70,17 +72,19 @@ header .main-menu-container {
 #main-menu li a {
     display: block;
     padding: 10px;
-    margin: 0;
     box-sizing: border-box;
 }
 
 .main-menu-text {
-    color: var(--white) !important;
     font-weight: 400;
     font-size: 2vh;
 }
 
 @media(min-width:1250px) {
+    header * {
+        color: var(--white) !important;
+    }
+
     .main-menu-container {
         display: flex;
         flex-direction: row;
@@ -141,6 +145,14 @@ header .main-menu-container {
 
 @media(max-width:1249px) {
     .header-content {
+        gap: 10px;
+    }
+
+    .title-heading {
+        font-size: 3rem;
+    }
+
+    .header-content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -152,27 +164,34 @@ header .main-menu-container {
         gap: 20%;
     }
 
-    .main-menu-container,
-    .main-menu-container * {
-        width: 100%;
-    }
 
     #main-menu {
         display: flex;
         flex-direction: column;
+        gap: 10px;
     }
 
     #main-menu a {
         display: flex;
-        width: 100%;
-        min-height: 7vh;
-        background-color: #1b1b1b;
-        border-block: 1px solid var(--white-transparent);
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px;
+        background-color: var(--white);
+        color: black;
+        font-weight: 600;
+        width: 90%;
+        border-radius: 10px;
+        transition: padding 0.4s cubic-bezier(.59, -1.28, .43, 1.77), box-shadow 0.4s cubic-bezier(.59, -1.28, .43, 1.77);
+        text-align: center;
     }
 
-    .submenu-item-text {
-        display: inline-block;
-        transform: translate(10%, 0px);
+    #main-menu a:hover {
+        padding: 13px;
+        box-shadow: 0px 3px 6px rgba(128, 128, 128, 0.377);
+    }
+
+    .submenu a {
+        transform: translateX(10px);
     }
 
     .menu-visible {
