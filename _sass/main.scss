@@ -5,7 +5,7 @@ body {
     justify-content: space-between;
     min-height: 100vh;
     font-family: "Inter", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     color: var(--primary);
 }
@@ -20,14 +20,4 @@ main {
 
 footer {
     background-color: rgb(20, 20, 20);
-}
-
-a:not(.cta-button):not(.special-link) {
-    text-decoration: none;
-    color: var(--secondary);
-}
-
-a:not(.cta-button):not(.special-link):hover {
-    text-decoration: underline;
-    color: var(--background-elements);
 }
