@@ -1,26 +1,36 @@
 <header class="drop-shadow">
-    <nav>
-        <h1 class="heading-font title special-link"><a href="{{ site.url }}">CCAV</a></h1>
-        <span class="material-symbols-outlined"><a href="javascript:void(0)" class="menu-button" onclick="toggleMenu()">menu</a></span>
-    </nav>
-    <nav class="main-menu-container">
-        <ul class="" id="main-menu">
-            {% for item in site.data.navigation %}
+    <nav class="header-content">
+        <nav class="mobile-menu">
+            <h1 class="title-heading"><a href="{{ site.url }}">CCAV</a></h1>
+            <span class="material-symbols-outlined">
+                <a href="javascript:void(0)" class="menu-button" onclick="toggleMenu()">menu</a>
+            </span>
+        </nav>
+        <nav class="main-menu-container">
+            <ul class="menu-hidden" id="main-menu">
+                {% for item in site.data.navigation %}
                 <li>
-                    <a href="{{ item.link }}" class="cta-button">{{item.name}}
+                    <a href="{{ item.link }}" class="main-menu-text">{{item.name}}
                         {% if item.submenu and item.submenu.size > 0 %}
-                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                        <span class="material-symbols-outlined">stat_minus_1</span>
                         {%endif%}
                     </a>
                     {% if item.submenu and item.submenu.size > 0 %}
-                        <ul class="submenu">
-                            {% for subitem in item.submenu %}
-                            <li><a href="{{ subitem.link }}">{{ subitem.name }}</a></li>
-                            {% endfor %}
-                        </ul>
+                    <ul class="submenu">
+                        {% for subitem in item.submenu %}
+                        <li><a href="{{ subitem.link }}"><span class="submenu-item-text">{{ subitem.name }}</span></a>
+                        </li>
+                        {% endfor %}
+                    </ul>
                     {% endif %}
                 </li>
-            {% endfor %}
-        </ul>
+                {% endfor %}
+            </ul>
+        </nav>
     </nav>
+    <div class="banner">
+        <div class="banner-text-container">
+            <h2 class="heading-font">{{ page.heading }}</h2>
+        </div>
+    </div>
 </header>
