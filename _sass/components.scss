@@ -191,14 +191,22 @@
     gap: 10px;
     overflow: hidden;
     width: 60%;
-    padding-left: calc(12%);
     mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, white 5%, white 95%, rgba(0, 0, 0, 0) 100%);
+    padding: 100px;
 }
 
 .carousel-view>* {
     margin-left: 1rem;
     margin-right: 1rem;
     align-self: center;
+}
+
+.carousel-view>*:first-child {
+    margin-left: calc((22vw/2 * 1.45));
+}
+
+.carousel-view>*:last-child {
+    margin-right: calc((22vw/2 * 1.45));
 }
 
 
@@ -210,8 +218,12 @@
     align-items: center;
     flex-grow: 0;
     flex-shrink: 0;
-    width: 400px;
-    padding: 10px;
+    width: 20vw;
+}
+
+.carousel-card-active {
+    scale: 1.1;
+    transition: scale .3s;
 }
 
 
@@ -226,7 +238,7 @@
     }
 
     .preview-card {
-        padding: 20px;
+        padding: 1vw;
     }
 
     .alert-box {
