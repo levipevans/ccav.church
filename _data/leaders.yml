@@ -1,0 +1,16 @@
+---
+- name: Mike Morris
+  position: Pastor
+  description: "Born in San Bernardino in 1952, I overcame family turmoil, found faith in Christ through a life-changing encounter in 1971, and eventually became the Senior Pastor at Calvary Chapel Antelope Valley in 2005, where I continue to serve with my wife, Mary, and our family."
+  scripture: "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths."
+  scripture-ref: "Proverbs 3:5-6"
+- name: Josh Hueser
+  position: Pastor
+  description: ""
+  scripture: "And the Word became flesh and dwelt among us, and we beheld His glory, the glory as of the only begotten of the Father, full of grace and truth."
+  scripture-ref: "John 1:14"
+- name: Lee Jimenez
+  position: Elder
+  description: ""
+  scripture: "And the Word became flesh and dwelt among us, and we beheld His glory, the glory as of the only begotten of the Father, full of grace and truth."
+  scripture-ref: "John 1:14"

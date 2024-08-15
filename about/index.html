@@ -25,52 +25,24 @@ permalink: /about/
     </div>
 </div>
 <div class="light-container">
-    <h2>Our Staff</h2>
+    <h2>Our Leaders</h2>
     <div class="carousel-container">
-        <button onclick="carouselPrevious(0)">&larr;</button>
+        <div onclick="carouselPrevious(0)" class="button">&larr;</div>
         <div class="carousel-view">
-            <div class="preview-card drop-shadow profile-card carousel-card carousel-card-active">
-                <img src="https://picsum.photos/250/300">
-                <h3>Person</h3>
-                <p style="text-align:center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis
-                    deleniti
-                    aliquid quos omnis sit
-                    a, laboriosam repellat laborum corrupti. Ipsa a pariatur laboriosam facilis minus nobis
-                    aspernatur
-                    accusamus ducimus.</p>
-            </div>
+            {% for leader in site.data.leaders %}
             <div class="preview-card drop-shadow profile-card carousel-card">
                 <img src="https://picsum.photos/250/300">
-                <h3>Person</h3>
-                <p style="text-align:center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis
-                    deleniti
-                    aliquid quos omnis sit
-                    a, laboriosam repellat laborum corrupti. Ipsa a pariatur laboriosam facilis minus nobis
-                    aspernatur
-                    accusamus ducimus.</p>
+                <h3> {{leader.name}} </h3>
+                <p class="position"> {{leader.position}} </p>
+                <p style=""> {{leader.description}} </p>
+                <div>
+                    <p> {{leader.scripture}} </p>
+                    <p class="position"> {{leader.scripture-ref}} </p>
+                </div>
             </div>
-            <div class="preview-card drop-shadow profile-card carousel-card">
-                <img src="https://picsum.photos/250/300">
-                <h3>Person</h3>
-                <p style="text-align:center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis
-                    deleniti
-                    aliquid quos omnis sit
-                    a, laboriosam repellat laborum corrupti. Ipsa a pariatur laboriosam facilis minus nobis
-                    aspernatur
-                    accusamus ducimus.</p>
-            </div>
-            <div class="preview-card drop-shadow profile-card carousel-card">
-                <img src="https://picsum.photos/250/300">
-                <h3>Person</h3>
-                <p style="text-align:center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis
-                    deleniti
-                    aliquid quos omnis sit
-                    a, laboriosam repellat laborum corrupti. Ipsa a pariatur laboriosam facilis minus nobis
-                    aspernatur
-                    accusamus ducimus.</p>
-            </div>
+            {% endfor %}
         </div>
-        <button onclick="carouselNext(0)">&rarr;</button>
+        <div onclick="carouselNext(0)" class="button">&rarr;</div>
     </div>
 </div>
 <div class="dark-container">
@@ -80,7 +52,7 @@ permalink: /about/
         <div class="carousel-view">
             <div class="preview-card drop-shadow profile-card carousel-card carousel-card-active">
                 <img src="https://picsum.photos/250/300">
-                <h3>Person</h3>
+                <h3>Mike Morris</h3>
                 <p style="text-align:center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis
                     deleniti
                     aliquid quos omnis sit
