@@ -132,8 +132,8 @@
     align-content: center;
     text-decoration: none;
     padding: 10px;
-    background-color: #e9d419;
-    color: black;
+    background-color: #1b1b1b;
+    color: var(--white);
     cursor: pointer;
     font-weight: 600;
     width: fit-content;
@@ -141,6 +141,16 @@
     transition: padding 0.4s cubic-bezier(.59, -1.28, .43, 1.77), box-shadow 0.4s cubic-bezier(.59, -1.28, .43, 1.77);
     height: fit-content;
 
+}
+
+.light-container .button {
+    background-color: #1b1b1b;
+    color: var(--white);
+}
+
+.dark-container .button {
+    background-color: var(--white);
+    color: #1b1b1b;
 }
 
 .button.light {
@@ -185,15 +195,16 @@
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
     width: 100%;
-    /* Center the carousel view horizontally */
-    padding: 20px;
     box-sizing: border-box;
     align-items: center;
     justify-items: center;
+
 }
 
 .carousel-view {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
     flex-direction: row;
     align-items: stretch;
     flex-wrap: nowrap;
@@ -202,7 +213,7 @@
     overflow: hidden;
     width: 90%;
     mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, white 5%, white 95%, rgba(0, 0, 0, 0) 100%);
-    padding: 100px;
+    padding: 50px;
 }
 
 .carousel-view>* {
@@ -228,12 +239,12 @@
 .profile-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-grow: 0;
     flex-shrink: 0;
     width: 20vw;
-    gap: .2rem;
+    gap: .6rem;
 }
 
 .carousel-card-active {
