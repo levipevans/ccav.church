@@ -14,6 +14,10 @@ function toggleMenu() {
 const carousels = document.getElementsByClassName("carousel-container");
 let carouselStates = [];
 
+let carousel = carouselStates[0];
+let slides = carousel.children;
+console.log(slides);
+
 for (let i = 0; i < carousels.length; i++) {
   carouselStates.push({
     activeIndex: 0,
@@ -23,36 +27,9 @@ for (let i = 0; i < carousels.length; i++) {
 
 function carouselNext(carouselIndex) {
   const carousel = carouselStates[carouselIndex];
-  if (carousel.activeIndex < carousel.items.length - 1) {
-    const nextIndex = carousel.activeIndex + 1;
-    carousel.items[nextIndex].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
-    carousel.items[nextIndex].classList.add("carousel-card-active");
-    carousel.items[carousel.activeIndex].classList.remove("carousel-card-active");
-    carousel.activeIndex = nextIndex;
-  }
-  else {
-    const nextIndex = 0;
-    carousel.items[nextIndex].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
-    carousel.items[nextIndex].classList.add("carousel-card-active");
-    carousel.items[carousel.activeIndex].classList.remove("carousel-card-active");
-    carousel.activeIndex = nextIndex;
-  }
+
 }
 
 function carouselPrevious(carouselIndex) {
   const carousel = carouselStates[carouselIndex];
-  if (carousel.activeIndex > 0) {
-    const previousIndex = carousel.activeIndex - 1;
-    carousel.items[carousel.activeIndex].classList.remove("carousel-card-active");
-    carousel.items[previousIndex].classList.add("carousel-card-active");
-    carousel.items[previousIndex].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
-    carousel.activeIndex = previousIndex;
-  }
-  else {
-    const previousIndex = carousel.items.length - 1;
-    carousel.items[carousel.activeIndex].classList.remove("carousel-card-active");
-    carousel.items[previousIndex].classList.add("carousel-card-active");
-    carousel.items[previousIndex].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
-    carousel.activeIndex = previousIndex;
-  }
 }
