@@ -14,16 +14,12 @@ function toggleMenu() {
 const carousels = document.getElementsByClassName("carousel-container");
 let carouselStates = [];
 
-
-
-
 for (let i = 0; i < carousels.length; i++) {
   carouselStates.push({
     activeIndex: 0,
     items: carousels[i].getElementsByClassName("carousel-card"),
   });
 }
-
 
 function carouselNext(carouselIndex) {
   const carousel = carouselStates[carouselIndex];
